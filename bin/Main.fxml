@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="battleship.GameController">
+    <ImageView fitWidth="900" fitHeight="700" preserveRatio="false" opacity="0.7">
+        <image>
+            <Image url="file:../Resource/cover.png" />
+        </image>
+    </ImageView>
+    <VBox spacing="20" alignment="CENTER">
+        <padding><javafx.geometry.Insets top="20" right="20" bottom="20" left="20"/></padding>
+    <Label text="Battleship" style="-fx-font-size: 96; -fx-font-family: 'Brush Script MT', cursive; -fx-font-weight: bold; -fx-font-style: italic; -fx-text-fill: #2c3e50; -fx-effect: dropshadow(gaussian, #ffffff, 8, 0.5, 0, 2);"/>
+
+        <!-- Player Names Input -->
+        <HBox spacing="20" alignment="CENTER">
+            <VBox spacing="5">
+                <Label text="Player 1:" style="-fx-font-size: 18; -fx-font-family: 'Brush Script MT', cursive; -fx-font-weight: bold; -fx-font-style: italic; -fx-text-fill: #2980b9;"/>
+                <TextField fx:id="player1NameField" promptText="Enter Player 1 name" style="-fx-font-size: 18; -fx-pref-width: 220; -fx-pref-height: 40;"/>
+            </VBox>
+            <VBox spacing="5">
+                <Label text="Player 2:" style="-fx-font-size: 18; -fx-font-family: 'Brush Script MT', cursive; -fx-font-weight: bold; -fx-font-style: italic; -fx-text-fill: #c0392b;"/>
+                <TextField fx:id="player2NameField" promptText="Enter Player 2 name" style="-fx-font-size: 18; -fx-pref-width: 220; -fx-pref-height: 40;"/>
+            </VBox>
+            <Button text="Start Game" fx:id="startButton" onAction="#startGame" style="-fx-background-radius: 30; -fx-background-color: linear-gradient(to right, #27ae60, #2ecc71); -fx-text-fill: white; -fx-font-size: 20; -fx-font-family: 'Brush Script MT', cursive; -fx-font-weight: bold; -fx-padding: 10 30 10 30; -fx-effect: dropshadow(gaussian, #16a085, 8, 0.5, 0, 2);"/>
+        </HBox>
+
+        <!-- Game Grids -->
+        <HBox spacing="40" alignment="CENTER">
+            <VBox alignment="CENTER" spacing="10">
+                <Label fx:id="player1Label" text="Player 1's Grid" style="-fx-font-size: 28; -fx-font-family: 'Brush Script MT', cursive; -fx-font-weight: bold; -fx-font-style: italic; -fx-text-fill: #2980b9; -fx-effect: dropshadow(gaussian, #ffffff, 6, 0.5, 0, 2);"/>
+                <GridPane fx:id="playerGrid" style="-fx-border-color: black;"/>
+            </VBox>
+            <VBox alignment="CENTER" spacing="10">
+                <Label fx:id="player2Label" text="Player 2's Grid" style="-fx-font-size: 28; -fx-font-family: 'Brush Script MT', cursive; -fx-font-weight: bold; -fx-font-style: italic; -fx-text-fill: #c0392b; -fx-effect: dropshadow(gaussian, #ffffff, 6, 0.5, 0, 2);"/>
+                <GridPane fx:id="opponentGrid" style="-fx-border-color: black;"/>
+            </VBox>
+        </HBox>
+
+        <Label fx:id="statusLabel" text="Enter player names and click Start Game" style="-fx-font-size: 14;"/>
+        <HBox spacing="20" alignment="CENTER">
+            <Button text="Rotate Ship" fx:id="rotateButton" style="-fx-background-radius: 30; -fx-background-color: linear-gradient(to right, #87ceeb, #b3e0ff); -fx-text-fill: #2c3e50; -fx-font-size: 18; -fx-font-family: 'Brush Script MT', cursive; -fx-font-weight: bold; -fx-padding: 8 24 8 24; -fx-effect: dropshadow(gaussian, #b3e0ff, 6, 0.5, 0, 2);"/>
+            <Button text="Clear Preview" fx:id="clearPreviewButton" onAction="#clearPreview" style="-fx-background-radius: 30; -fx-background-color: linear-gradient(to right, #87ceeb, #b3e0ff); -fx-text-fill: #2c3e50; -fx-font-size: 18; -fx-font-family: 'Brush Script MT', cursive; -fx-font-weight: bold; -fx-padding: 8 24 8 24; -fx-effect: dropshadow(gaussian, #b3e0ff, 6, 0.5, 0, 2);"/>
+        </HBox>
+    </VBox>
+</StackPane>
