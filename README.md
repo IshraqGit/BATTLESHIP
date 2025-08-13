@@ -20,15 +20,15 @@ This version features **player-vs-computer gameplay**, **interactive ship placem
 <table>
   <tr>
     <td align="center">
-      <img src="screenshots/placement.png" alt="Ship Placement Phase" width="300"><br>
+      <img src="Resource/1)ship_placemetn.png" alt="Ship Placement Phase" width="300"><br>
       <em>Ship Placement Screen</em>
     </td>
     <td align="center">
-      <img src="screenshots/gameplay.png" alt="Gameplay in Progress" width="300"><br>
+      <img src="Resource/2)gameplay.png" width="300"><br>
       <em>Gameplay Screen</em>
     </td>
     <td align="center">
-      <img src="screenshots/victory.png" alt="Victory Screen" width="300"><br>
+      <img src="Resource/3)gameover.png" alt="Victory Screen" width="300"><br>
       <em>Victory Screen</em>
     </td>
   </tr>
