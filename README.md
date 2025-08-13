@@ -1,7 +1,7 @@
 # 🚢 Battleship 
 
 Battleship is a **Java-based implementation** of the classic strategy game where players attempt to sink each other's hidden fleet.  
-This version features **player-vs-computer gameplay**, **interactive ship placement**, and a **clean terminal-based interface**.
+This version features **Multiplayer gameplay**, **interactive ship placement**, and a **clean terminal-based interface**.
 
 ---
 
