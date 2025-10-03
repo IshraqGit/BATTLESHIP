@@ -1712,5 +1712,5 @@ This concludes our tutorial on the core components of the Battleship game. You'v
 
 <hr>
 <footer>
-<p>© 2025 Farhan Ishraq — <code>IshraqGit/BATTLESHIP</code>.</p>
+<p>© 2025 Farhan Ishraq — <code>farhanishraq17/BATTLESHIP</code>.</p>
 </footer>
